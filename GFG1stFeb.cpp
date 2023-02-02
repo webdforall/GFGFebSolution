@@ -1,5 +1,6 @@
-#include <iostream>
-using namespace std;
+#include<bits/stdc++.h> 
+using namespace std; 
+
 class Solution{   
 public:
     long long int distinctColoring(int N, int r[], int g[], int b[]){
@@ -16,7 +17,6 @@ public:
         return min(dp[N-1][0], min(dp[N-1][1], dp[N-1][2]));
     }
 };
-
 int main(){
     int t;
     cin>>t;
